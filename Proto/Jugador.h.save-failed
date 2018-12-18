@@ -1,0 +1,22 @@
+#ifndef JUGADOR_H_INCLUDED
+#define JUGADOR_H_INCLUDED
+
+#include <cmath>
+#include <iostream>
+#include "Figuras.h"
+#include "Proyectil.h"
+
+#define TAMJUGADOR 20
+#define VELMAX 250 // 250
+#define VELMOV 2.5f //2.5f
+#define FRENADO 0.993f //0.993f
+
+extern RectangleShape jugador;
+extern float jVelX, jVelY;
+const Color colorJugador = Color::Red;
+
+void InitJugador(float x, float y);
+bool ControlJugador();
+bool ControlDisparo();
+
+#endif // JUGADOR_H_INCLUDED
